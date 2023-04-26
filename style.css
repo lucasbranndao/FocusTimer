@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-color: #121214;
+  --base-color: 194;
+  --bg-primary-light: hsla(var(--base-color),100%, 63%, 0.13);
+  --primary-color: hsl(var(--base-color),100%, 63%);
+
+  --text-color: #fff;
+
+  font-size: 62.5%;
+
+  
+}
+
+body{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  font-family: 'Roboto', sans-serif;
+}
+button{
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+}
+
+button svg {
+  width: clamp(1.5rem, 1.5rem + 1vw, 4rem);
+  height: clamp(1rem, 1rem + 10vw, 4.5rem);
+}
+.hide{
+  display: none;
+}
+
+.play svg path, .pause svg path, .sound-on svg path{
+  stroke: var(--primary-color);
+}
+
+#timer{
+  font-size: clamp(1rem, 1rem + 10vw, 4.8rem);
+   
+  display: flex;
+}
+
+#controls{
+  background-color: var(--bg-primary-light);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+
+  border-radius: 9999px;
+
+  width: clamp(2rem, 2rem + 30vw, 13.0rem);
+  height: clamp(1rem, 1rem + 10vw, 3.0rem);
+}
