@@ -1,44 +1,45 @@
-let buttonplay = document.querySelector('.play')
-let buttonpause = document.querySelector('.pause')
-let buttonstop = document.querySelector('.stop')
-let buttonsoundON = document.querySelector('.sound-on')
-let buttonsoundOf = document.querySelector('.sound-of')
+const buttonPlay = document.querySelector('.play')
+const buttonPause = document.querySelector('.pause')
+const buttonStop = document.querySelector('.stop')
+const buttonSet = document.querySelector('.set')
+const buttonSoundON = document.querySelector('.sound-on')
+const buttonSoundOf = document.querySelector('.sound-of')
 
 
 
-buttonplay.addEventListener('click', function() {
-  buttonplay.classList.add('hide')
-  document.querySelector('.pause').classList.remove('hide')
-  document.querySelector('.stop').classList.remove('hide')
-  document.querySelector('.set').classList.add('hide')
+buttonPlay.addEventListener('click', function() {
+  buttonPlay.classList.add('hide')
+  buttonPause.classList.remove('hide')
+  buttonStop.classList.remove('hide')
+  buttonSet.classList.add('hide')
   
 })
 
-buttonpause.addEventListener('click', function() {
-  buttonpause.classList.add('hide')
-  document.querySelector('.play').classList.remove('hide')
-  document.querySelector('.set').classList.add('hide')
+buttonPause.addEventListener('click', function() {
+  buttonPause.classList.add('hide')
+  buttonPlay.classList.remove('hide')
+  buttonSet.classList.add('hide')
   
   
 })
 
-buttonstop.addEventListener('click', function() {
-  buttonstop.classList.add('hide')
-  document.querySelector('.set').classList.remove('hide')
-  document.querySelector('.play').classList.remove('hide')
-  document.querySelector('.pause').classList.add('hide')
+buttonStop.addEventListener('click', function() {
+  buttonStop.classList.add('hide')
+  buttonSet.classList.remove('hide')
+  buttonPlay.classList.remove('hide')
+  buttonPause.classList.add('hide')
   
 })
 
-buttonsoundON.addEventListener('click', function() {
-  buttonsoundON.classList.add('hide')
-  document.querySelector('.sound-of').classList.remove('hide')
+buttonSoundON.addEventListener('click', function() {
+  buttonSoundON.classList.add('hide')
+  buttonSoundOf.classList.remove('hide')
 
 })
 
-buttonsoundOf.addEventListener('click', function() {
-  buttonsoundOf.classList.add('hide')
-  document.querySelector('.sound-on').classList.remove('hide')
+buttonSoundOf.addEventListener('click', function() {
+  buttonSoundOf.classList.add('hide')
+  buttonSoundON.classList.remove('hide')
 })
 
 
