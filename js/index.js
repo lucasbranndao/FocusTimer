@@ -2,6 +2,7 @@ import Controls from "./controls.js"
 import Timer  from "./timer.js"
 
 const buttonPlay = document.querySelector('.play')
+console.log(buttonPlay)
 const buttonPause = document.querySelector('.pause')
 const buttonStop = document.querySelector('.stop')
 const buttonSet = document.querySelector('.set')
