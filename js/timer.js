@@ -2,7 +2,9 @@ export default function Timer({
   minutesDisplay,
   secondsDisplay,
   timerTimeOut,
-  resetControls
+  resetControls,
+  minutes
+  
 }) {
   function updateDisplay(minutes, seconds) {
     minutesDisplay.textContent = String(minutes).padStart(2, '0')
@@ -11,7 +13,7 @@ export default function Timer({
 
   function reset() {
     clearTimeout(timerTimeOut)
-    updateTimerDisplay(minutes, 0)
+    updateDisplay(minutes, 0)
 
   }
 

@@ -1,8 +1,7 @@
-import Controls from "./controls.js"
+import Controls from "./Controls.js"
 import Timer  from "./timer.js"
 
 const buttonPlay = document.querySelector('.play')
-console.log(buttonPlay)
 const buttonPause = document.querySelector('.pause')
 const buttonStop = document.querySelector('.stop')
 const buttonSet = document.querySelector('.set')
@@ -17,9 +16,11 @@ const controls = Controls({
   buttonPlay,
   buttonPause,
   buttonStop,
-  buttonSet
-  
+  buttonSet,
+  minutes
 })
+
+
 const timer = Timer({
   minutesDisplay,
   secondsDisplay,
